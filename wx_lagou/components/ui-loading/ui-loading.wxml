@@ -1,0 +1,25 @@
+
+
+<view class="cm-overlay">
+  <ui-mask z-index="{{maskzIndex}}" ></ui-mask>
+<view class="spinner" style="z-index: {{meIndex}}">
+  <view class="spinner-container container1">
+    <view class="circle1"></view>
+    <view class="circle2"></view>
+    <view class="circle3"></view>
+    <view class="circle4"></view>
+  </view>
+  <view class="spinner-container container2">
+    <view class="circle1"></view>
+    <view class="circle2"></view>
+    <view class="circle3"></view>
+    <view class="circle4"></view>
+  </view>
+  <view class="spinner-container container3">
+    <view class="circle1"></view>
+    <view class="circle2"></view>
+    <view class="circle3"></view>
+    <view class="circle4"></view>
+  </view>
+</view>
+</view>

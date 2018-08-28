@@ -1,0 +1,35 @@
+<scroll-view lower-threshold="100" 
+bindscrolltolower="lowerCallback" class="wrap" scroll-y="{{!scroll_bol}}" 
+style="height:{{scroll_height + 'px'}}">
+
+  <view style="height:800px;background-color:yellow;">
+        <view  style="background-color:gray;height:50px;position:relative;z-index:10;">
+
+    </view>
+    <view bindtap='click_scroll' style="background-color:pink;position:relative;z-index:10;">
+    12345 {{filterName}}
+      <scroll-view wx:if="{{scroll_bol}}" style='border:1px solid black;'>
+          <view wx:for="{{studyData}}" wx:key="{{index}}" data-name="{{item}}" bindtap='filterUiData'>
+            {{item}}
+          </view>
+      </scroll-view>
+    </view>
+    <view wx:if="{{scroll_bol}}" class='fixed_wrap'>
+    </view>
+    <block wx:for="{{uiData.result}}" wx:key="{{index}}">
+      <view wx:if="{{item.educationBackground == filterName || filterName == ''}}">
+        {{item.educationBackground}}
+      {{item.companyFullName}}
+    </view>
+  </block> 
+  </view>
+<!-- 
+  wx:for 作用组件; 会被渲染出来;
+  数量由对象的 长度决定;
+
+  想用 wx:for 不渲染出 作用组件 请用        block
+
+ -->
+  
+    
+</scroll-view>

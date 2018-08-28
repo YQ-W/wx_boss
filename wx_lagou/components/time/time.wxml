@@ -1,0 +1,7 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<slot name="before"></slot>
+<view class="inner" bindtap='customMethod'>
+  {{innerText}}// {{someData.name}}
+</view>
+  <view>这里是组件的内部细节</view>
+<slot name="after"></slot>

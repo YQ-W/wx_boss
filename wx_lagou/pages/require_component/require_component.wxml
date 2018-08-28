@@ -1,0 +1,25 @@
+<!--pages/require_component/require_component.wxml-->
+<text bindtap='bindClick'>pages/require_component/require_component.wxml</text>
+<view class='wyq' bindtap="onClick">点我就返回</view>
+
+<!-- 事件系统是组件间通信的主要方式之一。自定义组件可以触发任意的事件，
+引用组件的页面可以监听这些事件。关于事件的基本概念和用法 -->
+<!--  innerText 与 inner-text   -->
+<!-- <component-time innerText="{{time}}" bind:myevent="onMyEvent"> -->
+  <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+    <!-- <view>这里是插入到组件slot中的内容</view>
+    <view>这里是插入到组件slot中的内容</view> -->
+    <!-- 这部分内容将被放置在组件 <slot name="before"> 的位置上 -->
+    <!-- <view slot="before">这里是插入到组件slot name="before"中的内容</view> -->
+    <!-- 这部分内容将被放置在组件 <slot name="after"> 的位置上 -->
+    <!-- <view slot="after">这里是插入到组件slot name="after"中的内容</view>
+
+</component-time>>   -->
+
+{{arr}}
+
+<navigator url="../lagou/lagou?name=123">大叔大婶多</navigator>
+
+<!--  bind
+    -->
+<num-controller num="{{num}}" bind:numChange="numChange" ></num-controller>

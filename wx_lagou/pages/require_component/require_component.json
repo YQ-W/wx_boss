@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "component-time": "../../components/time/time",
+    "num-controller":"../../components/num-controller/num-controller"
+  }
+}

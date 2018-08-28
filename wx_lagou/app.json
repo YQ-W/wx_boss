@@ -1,0 +1,24 @@
+{
+  "pages": [
+    "pages/yanchu/yanchu",
+    "pages/onReachBottom/onReachBottom",
+    "pages/swiper/swiper",
+    "pages/city/city",
+    "pages/overflowScroll/overflowScroll",
+    "pages/data-hi/data-hi",
+    "pages/boss/boss",
+    "pages/index/index",
+    "pages/yexiaochai/yexiaochai",
+    "pages/request/request",
+    "pages/require_component/require_component",
+    "pages/lagou/lagou"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 100
+  }
+}

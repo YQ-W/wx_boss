@@ -1,0 +1,33 @@
+<!--pages/boss/boss.wxml-->
+<scroll-view class="scroll-v" style="height:{{height+'px'}}" scroll-y="{{visible}}">
+
+
+<view class="ipt_header">
+<navigator url="../lagou/lagou"
+open-type='redirect'>
+  <image class="home_page" src="../../image/icon-home.png"></image>
+</navigator>
+  <text class="search_city">{{visible}}北京</text>
+  <input class="search" type='text' ></input>
+  <button type="click_search" class="click_search">搜索</button>
+</view>
+<view style="height:10px;">
+</view>
+
+<view class="filter-bar">
+  <view bindtap='touchClick' wx:for="{{filter_work}}" wx:key="{{index}}" bindtap='setClass' data-index="{{index}}" class="{{item.click_bol ? 'selected'  : ''}} nav">
+      {{item.name}}
+  </view>
+  <scroll-view class="scroll-bar" wx:if="{{scroll_bol}}" scroll-y="1">
+    <view wx:for="{{suffer}}" class="item {{index == 0 ? 'item_first' : ''}}">
+        {{item.name}}
+    </view>
+</scroll-view>
+</view>
+
+<view style='height:800px;background-color:yellow;'>
+<view class="dd" style="width:100px;">12333333333333333333333333333333</view>
+</view>
+</scroll-view>
+
+

@@ -1,0 +1,19 @@
+<!--pages/onReachBottom/onReachBottom.wxml-->
+<wxs module="filter_img" src="./filter_movieList.wxs"></wxs> 
+
+<block wx:for="{{arr.movieList}}" wx:key="{{index}}">
+<view style='height:100px;'>
+  {{item.sc}}
+  {{item.star}}
+  {{item.nm}}
+  {{item.wish}}
+  {{item.version}}
+  <image src="{{  filter_img.filterMovie(item.img)}}"></image>
+
+</view>
+
+</block> 
+<!-- {{ filterMovie() }}
+{{filter_Movie}}
+
+{{ filter_img.filterMovie}} -->

@@ -1,0 +1,28 @@
+<!--components/city_List/city_List.wxml-->
+<!-- province 美  ['prɑvɪns] -->
+<view class="header">
+   <view class="closeCity" bindtap='closeCity'>
+   X
+   </view>
+   选择城市
+</view>
+
+<scroll-view style="height:{{height + 'px'}}" class="province" scroll-y="true">
+    <block wx:for="{{city}}" wx:key="{{index}}">
+        <view bindtap='filterCity' data-index="{{index}}" class="{{index == selectedIndex ? 'selected' : ''}}">{{item.name}}</view>
+    </block> 
+</scroll-view>
+
+
+
+
+
+<scroll-view scroll-y="true" class="city" style="height:{{height + 'px'}}">
+    <block wx:for="{{city[selectedIndex].city}}" wx:key="{{index}}">
+      <view>
+          {{item.name}}
+      </view>
+    
+    </block>
+</scroll-view>
+

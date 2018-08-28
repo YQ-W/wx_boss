@@ -1,0 +1,114 @@
+/* pages/boss/boss.wxss */
+page{
+  overflow-y:hidden;
+}
+.dd{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.ipt_header{
+    position: relative;
+    padding: 0 60px 0 49px;
+    padding-top: 13px;
+}
+.home_page{
+    width: 18px;
+    height: 18px;
+    display: block;
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    margin-bottom:3px; 
+    z-index: 10;
+}
+.search{
+    height: 29px;
+    background-color: #f4f7f9;
+    border: none;
+    font-size: 14px;
+    color: #8b96a6;
+    line-height: 19px;
+    padding: 0 13px 0 65px;
+    border-radius: 15px;
+
+}
+.search_city{
+   display: block;
+    position: absolute;
+    left: 62px;
+    top: 20px;
+    font-size: 12px;
+    color: #333;
+    border-right: solid 1px rgba(0,0,0,.05);
+    width: 44px;
+    height: 15px;
+    line-height: 15px;
+    z-index: 20;
+}
+.click_search{
+    color: #5dd5ca;
+    background: 0 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 15px;
+    line-height: 55px;
+    height: 55px;
+    display: block;
+    width: 60px;
+}
+button[class="click_search"]::after {
+  border: none;
+} 
+
+.filter-bar{
+    border-top: solid 1px #ebebeb;
+    border-bottom: solid 1px #ebebeb;
+    display: flex;
+    height: 37px;
+    line-height: 37px;
+    position: relative;
+}
+.filter-bar view{
+    flex: 1;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-indent: -5px;
+    color: #aaa;
+}
+.filter-bar .nav::after{
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-left: solid 1px #797979;
+    border-top: solid 1px #797979;
+    -webkit-transform: rotate(-135deg);
+    position: relative;
+    top: -3px;
+    left: 5px;
+    transition: all .3s ease 0s;
+}
+.filter-bar .selected::after{
+    -webkit-transform: rotate(45deg);
+    top: 0;
+}
+.scroll-bar{
+  position: absolute;
+  top:37px;
+  left: 0;
+  background: white;
+}
+.item{
+  height: 60px;
+  line-height: 60px;
+  padding: 0 20px;
+  font-size: 12px;
+}
+.item_first{
+    background: #f8f8fa;
+    color: #4b4b4b;
+}

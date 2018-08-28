@@ -1,0 +1,3 @@
+<!--pages/yexiaochai/yexiaochai.wxml-->
+<numStudy></numStudy>
+<ui-loading></ui-loading>

@@ -1,0 +1,12 @@
+<!--pages/city/city.wxml-->
+<text bindtap='moveTop'>
+  北京
+</text>
+
+<!-- 
+  切入 和 切出 应用的是 父组件身上的状态
+  data => moveTop
+ -->
+<city-list bind:closeCity="closeCity" class="Transition {{moveTop ?'scrollTop' : ''}}" city="{{city}}">
+
+</city-list> 

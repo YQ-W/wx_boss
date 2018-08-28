@@ -1,0 +1,22 @@
+<wxs module="filter_time" src="filter_time.wxs"></wxs>
+
+<button bindtap='filter_time' data-time='1'>
+   <!--  今天date 和 arr <-date   -->
+    今天
+</button> 
+
+<button bindtap='filter_time' data-time='7'>
+    本周内
+</button>
+
+<button bindtap='filter_time' data-time='30'>
+    一个月内
+</button> 
+
+<view wx:for="{{arr.data}}">
+<!-- {{filter_time.filter_time(item.showTimeRange)}}
+{{'//' + timeLeft}} -->
+  <view wx:if="{{ filter_time.filter_time(item.showTimeRange) < timeLeft }}">
+    {{item.showTimeRange}}
+  </view>
+</view>

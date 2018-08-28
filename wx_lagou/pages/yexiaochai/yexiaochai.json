@@ -1,0 +1,6 @@
+{
+  "usingComponents":{
+    "numStudy": "../../components/study/study",
+    "ui-loading":"../../components/ui-loading/ui-loading"
+  }
+}

@@ -1,0 +1,18 @@
+
+/// 方法可以在xml 里面调用
+
+// xml wx:for() 循环的时候产生了一个item
+// 如果能处理item 并且 return 一个新的值;
+// 问题就解决了
+
+function filterMovie(obj){
+
+  // obj  https://p1.meituan.net/128.180/movie/7a2c3acb1bda2baad8df309b046d0872344909.jpg
+  return obj.replace('w.h','128.128')
+
+}
+
+module.exports = {
+  filterMovie : filterMovie
+}
+

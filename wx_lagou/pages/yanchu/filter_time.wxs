@@ -1,0 +1,19 @@
+//  wx 2.2.3 wxs 模块下不允许使用 new Date()
+//  解决方案 :  getDate(); 
+function filter_time(str){
+    /// 2018-8-25 至 2018-9-30
+    var arr = str.split('至')[0].trim();
+  // 生成一个 date对象
+    date = getDate(arr)
+    
+  console.log(date.getMonth())
+  // 获取当前时间的时间戳
+    var time = date.getTime();
+
+    console.log(time)
+    return time
+}
+
+module.exports = {
+  filter_time: filter_time
+}
